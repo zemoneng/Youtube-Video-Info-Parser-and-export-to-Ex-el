@@ -4,22 +4,15 @@
 import random
 import time
 
-import pandas as pd
-import requests as req
+import pandas as pd  # для создания Excel-таблицы в формате .xlsx
+import requests as req  # для обхода ссылок
 from bs4 import BeautifulSoup
 
-# Add your Youtube URL's in list_of_urls to grab information from it
+# Add your Youtube URL's in list_of_urls to grab information about videos
 # Добавь сюда урлы, с которых хочешь собрать информацию:
 list_of_urls = ["https://www.youtube.com/watch?v=7I6EyEonVLQ&list=PL66DIGaegedrOcVcDyE8zfSqKgpToMOeM&index=1",
                 "https://www.youtube.com/watch?v=D25Btx8srSU&list=PL66DIGaegedrOcVcDyE8zfSqKgpToMOeM&index=2",
-                "https://www.youtube.com/watch?v=ZbwqquA7rxE&list=PL66DIGaegedrOcVcDyE8zfSqKgpToMOeM&index=3",
-                "https://www.youtube.com/watch?v=E9tSWNPZV6E&list=PL66DIGaegedrOcVcDyE8zfSqKgpToMOeM&index=4",
-                "https://www.youtube.com/watch?v=CJbXKYcf7SA&list=PL66DIGaegedrOcVcDyE8zfSqKgpToMOeM&index=5",
-                "https://www.youtube.com/watch?v=jxZZldnG7pU&list=PL66DIGaegedrOcVcDyE8zfSqKgpToMOeM&index=6",
-                "https://www.youtube.com/watch?v=PV7z6QEbF2k&list=PL66DIGaegedrOcVcDyE8zfSqKgpToMOeM&index=7",
-                "https://www.youtube.com/watch?v=q6byv4iGq2Y&list=PL66DIGaegedrOcVcDyE8zfSqKgpToMOeM&index=8",
-                "https://www.youtube.com/watch?v=sNzP3yVF8_A&list=PL66DIGaegedrOcVcDyE8zfSqKgpToMOeM&index=9",
-                "https://www.youtube.com/watch?v=ng1f3W_WL2s&list=PL66DIGaegedrOcVcDyE8zfSqKgpToMOeM&index=10"]
+                "https://www.youtube.com/watch?v=ZbwqquA7rxE&list=PL66DIGaegedrOcVcDyE8zfSqKgpToMOeM&index=3"]
 
 
 # Парсер одной страницы
@@ -49,7 +42,7 @@ for i in list_of_urls:
     UploadDate_list.append(current_video_info[3])
     time.sleep(random.uniform(0, 2))  # рандомная задержка между обходом страниц, чтобы ютьюб не забанил
 
-Current_time = time.strftime("%m-%d-%Y_%Hh%Mmin")  # время завершения сбора данных
+Current_time = time.strftime("%m-%d-%Y_%Hh%M_min")  # время завершения сбора данных
 
 # Формирует Excel-файл с данными в виде таблицы
 table_from_youtube_list = pd.DataFrame({'URL': list_of_urls,
