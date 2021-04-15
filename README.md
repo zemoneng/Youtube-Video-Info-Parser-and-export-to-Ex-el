@@ -37,3 +37,9 @@ and pandas
 ```
 pip install pandas
 ```
+
+_____
+
+Now open py file, add URL's inside the list_of_urls. Run the code. 
+
+Done. Check your result file.
