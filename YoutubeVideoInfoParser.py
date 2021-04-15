@@ -15,6 +15,9 @@ list_of_urls = ["https://www.youtube.com/watch?v=7I6EyEonVLQ&list=PL66DIGaegedrO
 
 WAITING_TIME = 2  # set number of seconds waiting until grab next URL (to avoid Youtube blocking)
 
+Name_list = []
+Views_list = []
+UploadDate_list = []
 
 # Page parser
 def info_parser(url_):
@@ -26,11 +29,6 @@ def info_parser(url_):
     upload_date_ = soup.find(itemprop="uploadDate").get("content")
 
     return url_, name_, views_, upload_date_
-
-
-Name_list = []
-Views_list = []
-UploadDate_list = []
 
 
 # Sequentially runs URLs from list_of_urls and writes the data to the lists
