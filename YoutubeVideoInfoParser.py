@@ -4,7 +4,7 @@
 import random
 import time
 
-import requests as req  # need for download pages
+import requests as req  # need for HTTP requests
 from bs4 import BeautifulSoup  # need for grab markup from Youtube pages
 import pandas as pd  # need for create Excel spreadsheet (.xlsx file)
 
