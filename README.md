@@ -11,7 +11,7 @@ ____
 To start working code you need to install a few python libraries (if you're using Anaconda or something you need to check is this libraries already install). I'm using Pycharm, if you do so:
 - Create your Pycharm project
 - go to Pycharm/Preferences... 
-- and choose Pycharm interpreter: Pythom 3.8.
+- and choose Pycharm interpreter: Python 3.8.
 
 go to the Terminal in your project:
 
