@@ -9,7 +9,7 @@ ____
 
 ## Installing modules first
 
-I'm using Pycharm. So to start working code you need to install a few libraries. 
+I'm using Pycharm. So to start working code you need to install a few python libraries. If you're using Anaconda or something you also can install that libraries if you don't have it: 
 - Create your Pycharm project
 - go to Pycharm/Preferences... 
 - and choose Pycharm interpreter: Pythom 3.8.
