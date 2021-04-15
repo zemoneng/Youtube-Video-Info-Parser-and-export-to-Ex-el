@@ -1,20 +1,18 @@
 # Youtube Video Info Parser and export to Excel file
 
-This is a code for collecting statistics number of views (also other information) of videos from any channels on Youtube. You give a list of Youtube pages with videos, and the output is an Excel spreadsheet with data.
+This is a code for collecting number of views (also other information) of videos from any channels on Youtube. You give a list of Youtube pages with videos and the output is an Excel spreadsheet file with data.
 
 ____
 
-I'm using python 3.8 interpreter.
-____
 
 ## Installing modules first
 
-I'm using Pycharm. So to start working code you need to install a few python libraries. If you're using Anaconda or something you also can install that libraries if you don't have it: 
+To start working code you need to install a few python libraries (if you're using Anaconda or something you need to check is this libraries already install). I'm using Pycharm, if you do so:
 - Create your Pycharm project
 - go to Pycharm/Preferences... 
 - and choose Pycharm interpreter: Pythom 3.8.
 
-go to Terminal in your project:
+go to the Terminal in your project:
 
 1. install requests library, to do that enter this line in the terminal:
 ```
