@@ -15,6 +15,7 @@ list_of_urls = ["https://www.youtube.com/watch?v=7I6EyEonVLQ&list=PL66DIGaegedrO
 
 WAITING_TIME = 2  # set number of seconds waiting until grab next URL (to avoid Youtube blocking)
 
+# initiate empty lists
 Name_list = []
 Views_list = []
 UploadDate_list = []
