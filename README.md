@@ -1,4 +1,5 @@
 # Youtube Video Info Parser and export to Excel file
+(Инструкция на русском в файле README_RUS.md)
 
 This is a code for collecting number of views (also other information) of videos from any channels on Youtube. You give a list of Youtube pages with videos and the output is an Excel spreadsheet file with data.
 
